@@ -1,6 +1,8 @@
 "use strict";
 
 const fullName = "pETer jOhn smiTh";
+const nameParts = getNameParts(fullName);
+console.log(nameParts);
 
 function capitalize(name) {
   return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
@@ -19,5 +21,3 @@ function getNameParts(fullName) {
   }
   return { firstName, middleName, lastName };
 }
-const nameParts = getNameParts(fullName);
-console.log(nameParts);
